@@ -9,7 +9,7 @@ class Swiftjs < Formula
   depends_on "oven-sh/bun/bun"
 
   # Explicitly depend on the scaffolder from this same tap
-  depends_on "atpugvaraa/swiftjs/create-swiftjs-app"
+  depends_on "atpugvaraa/atpugvaraa/create-swiftjs-app"
 
   def install
     system "swift", "build", "--disable-sandbox", "--configuration", "release"
