@@ -1,6 +1,6 @@
 cask "armd" do
-  version "0.1.1"
-  sha256 "525975215c8e7e609cca5c58e7b074734ec5c987268f73b9b6da2d5cbeede2db"
+  version "0.1.2"
+  sha256 "bd3af052fbea6b44af8df74aa2e6624f8b64c1c78fe8a27e8aa514e2fb63c2e5"
 
   url "https://github.com/atpugvaraa/ARMd/releases/download/v#{version}/ARMd-#{version}.zip"
   name "ARMd"
