@@ -1,13 +1,15 @@
 cask "armd" do
-  version "0.1.0"
-  sha256 "bdab13d4e4f224dbdc500d69874576eca30b9e17a5e086d51c405d2f3e828688"
+  version "0.1.1"
+  sha256 "525975215c8e7e609cca5c58e7b074734ec5c987268f73b9b6da2d5cbeede2db"
 
   url "https://github.com/atpugvaraa/ARMd/releases/download/v#{version}/ARMd-#{version}.zip"
   name "ARMd"
   desc "Write and run Keil-style ARM7 assembly on Apple Silicon"
   homepage "https://github.com/atpugvaraa/ARMd"
 
-  depends_on macos: ">= :sequoia"
+  # Bare symbol, not ">= :sequoia": the string-comparison form is deprecated and
+  # Homebrew warns on every install. A bare symbol already means "at least".
+  depends_on macos: :sequoia
 
   app "ARMd.app"
 
